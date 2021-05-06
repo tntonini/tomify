@@ -12,6 +12,7 @@ const App = () => (
   </>
 )
 
+
 const GlobalCSS = css`
   * {
     box-sizing: border-box;

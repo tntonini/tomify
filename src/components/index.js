@@ -57,7 +57,9 @@ const MusicPlayer = () => {
       </div>
     </StoreContext.Provider>
   )
+  
 }
+
 
 const CSS = css`
   height: 100%;

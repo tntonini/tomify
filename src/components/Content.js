@@ -229,6 +229,7 @@ const PlayPause = ({ playing, songId, isCurrentSong, visible }) => {
   }
 }
 
+
 const CSS = css`
   width: calc(100% - 200px);
   height: calc(100% - 75px);

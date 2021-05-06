@@ -15,6 +15,7 @@ const Modal = ({ children, show, close }) => {
   )
 }
 
+
 const CSS = css`
   height: 100vh;
   width: 100vw;

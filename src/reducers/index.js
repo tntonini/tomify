@@ -18,6 +18,7 @@ export const initialState = {
   volume: DEFAULT_VOLUME
 }
 
+
 export const reducer = (state, action) => {
   switch (action.type) {
     case 'ADD_PLAYLIST':

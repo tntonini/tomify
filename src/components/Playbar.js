@@ -58,6 +58,7 @@ const Playbar = () => {
               style={{
                 width: handleProgress(state.currentTime, state.duration)
               }}
+              
             />
           </div>
 

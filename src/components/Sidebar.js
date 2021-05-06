@@ -29,6 +29,7 @@ const Sidebar = () => {
       toast: 'Playlist was created successfully!'
     })
   }
+  
 
   const handleModal = () =>
     setState({ ...sidebarState, modal: !sidebarState.modal })
