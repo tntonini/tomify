@@ -47,10 +47,10 @@ export const reducer = (state, action) => {
     case 'SAVE_TO_PLAYLIST':
       state.playlists[action.playlist].add(state.addToPlaylistId)
       return { ...state, addToPlaylistId: '' }
-    case 'SET_CURRENT_TIME':
-      return { ...state, currentTime: action.time }
-    case 'SET_DURATION':
-      return { ...state, duration: action.duration }
+    // case 'SET_CURRENT_TIME':
+    //   return { ...state, currentTime: action.time }
+    // case 'SET_DURATION':
+    //   return { ...state, duration: action.duration }
     case 'SET_PLAYLIST':
       return { ...state, currentPlaylist: action.playlist }
     case 'SET_VOLUME':

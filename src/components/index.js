@@ -44,15 +44,15 @@ const MusicPlayer = () => {
               ? `./media/${song.title} - ${song.artist}.mp3`
               : ''
           }
-          onLoadedMetadata={() =>
-            dispatch({
-              type: 'SET_DURATION',
-              duration: audioRef.current.duration
-            })
-          }
-          onTimeUpdate={e =>
-            dispatch({ type: 'SET_CURRENT_TIME', time: e.target.currentTime })
-          }
+          // onLoadedMetadata={() =>
+          //   dispatch({
+          //     type: 'SET_DURATION',
+          //     duration: audioRef.current.duration
+          //   })
+          // }
+          // onTimeUpdate={e =>
+          //   dispatch({ type: 'SET_CURRENT_TIME', time: e.target.currentTime })
+          // }
         />
       </div>
     </StoreContext.Provider>

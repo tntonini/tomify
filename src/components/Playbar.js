@@ -3,16 +3,16 @@ import React, { useContext, useCallback } from 'react'
 import { css, jsx } from '@emotion/core'
 import { StoreContext } from './index'
 
-const formatTime = inputSeconds => {
-  let seconds = Math.floor(inputSeconds % 60)
-  if (seconds < 10) seconds = `0${seconds}`
+// const formatTime = inputSeconds => {
+//   let seconds = Math.floor(inputSeconds % 60)
+//   if (seconds < 10) seconds = `0${seconds}`
 
-  const minutes = Math.floor(inputSeconds / 60)
+//   const minutes = Math.floor(inputSeconds / 60)
 
-  return `${minutes}:${seconds}`
-}
+//   return `${minutes}:${seconds}`
+// }
 
-const handleProgress = (currentTime, duration) => 600 * (currentTime / duration)
+// const handleProgress = (currentTime, duration) => 600 * (currentTime / duration)
 
 const Playbar = () => {
   const { state, dispatch } = useContext(StoreContext)
@@ -49,7 +49,7 @@ const Playbar = () => {
           />
         </div>
 
-        <div style={{ marginTop: 2.5 }}>
+        {/* <div style={{ marginTop: 2.5 }}>
           <span>{formatTime(Math.floor(state.currentTime))}</span>
 
           <div className="progress-container">
@@ -63,7 +63,7 @@ const Playbar = () => {
           </div>
 
           <span>{formatTime(state.duration)}</span>
-        </div>
+        </div> */}
       </div>
 
       <div className="right">
